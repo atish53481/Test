@@ -33,6 +33,8 @@ public class Assignment {
 	WebDriver FF ;
 	
 	
+	
+	//Browser Opening
 	@BeforeClass
 	public void openURl() {
 		FF= new FirefoxDriver();
@@ -43,10 +45,12 @@ public class Assignment {
 	
 	private static final String COMMENT_PREFIX="--";
 	
+	
+	//TC Execution
 	@Test(dataProvider="login")
 	public void TermParking(String lot,String Entry,String Leaving,String Cost) {
 	
-		System.out.println(Cost);
+	
 		switch(lot) {
 		case "Short-Term Parking":
 			calulation(lot,Entry,Leaving,Cost);
@@ -60,6 +64,8 @@ public class Assignment {
 		
 	}
 
+	
+	//Data Providing via Excel csv
 	@DataProvider(name="login")
 	public Object[][] filereader(){
 	try {
@@ -96,12 +102,17 @@ public class Assignment {
 }
 return new Object[][] {};}
 	
+	
+	//Browser Closing
 	@AfterClass
 	public void closeBrowser() {
 		FF.quit();
 	}
 
-public void calulation(String lot,String Enter, String Leave, String Cost) {
+	
+	
+	//EXcel CSV Method
+	public void calulation(String lot,String Enter, String Leave, String Cost) {
 	Select select = new Select(FF.findElement(By.id(Lot_drop)));
 	select.selectByVisibleText(lot);
 	FF.findElement(By.id(EnterDate_field)).clear();

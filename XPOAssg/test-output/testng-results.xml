@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="13385" started-at="2019-04-23T07:36:16Z" finished-at="2019-04-23T07:36:30Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="13385" started-at="2019-04-23T07:36:16Z" finished-at="2019-04-23T07:36:30Z">
+      <class name="Page.Assignment">
+        <test-method status="PASS" signature="openURl()[pri:0, instance:Page.Assignment@675d3402]" name="openURl" is-config="true" duration-ms="9899" started-at="2019-04-23T13:06:16Z" finished-at="2019-04-23T13:06:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURl -->
+        <test-method status="PASS" signature="TermParking(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Page.Assignment@675d3402]" name="TermParking" duration-ms="1714" started-at="2019-04-23T13:06:26Z" data-provider="login" finished-at="2019-04-23T13:06:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Short-Term Parking]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[04/01/2019]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[04/02/2019]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TermParking -->
+        <test-method status="PASS" signature="TermParking(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Page.Assignment@675d3402]" name="TermParking" duration-ms="1202" started-at="2019-04-23T13:06:28Z" data-provider="login" finished-at="2019-04-23T13:06:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Long-Term Surface Parking]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[04/01/2019]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[04/05/2019]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TermParking -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Page.Assignment@675d3402]" name="closeBrowser" is-config="true" duration-ms="548" started-at="2019-04-23T13:06:29Z" finished-at="2019-04-23T13:06:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Page.Assignment -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
